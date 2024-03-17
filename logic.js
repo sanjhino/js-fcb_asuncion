@@ -299,15 +299,15 @@ function checkWin(){
     for(let r=0; r<rows; r++){
         for(let c=0; c<columns; c++){
             if(board[r][c] === 2048 && is2048Exist == false ){
-                alert("You Win! You got the 2048");
+                alert("You Win! You got DekaMaster!");
                 is2048Exist = true;
             }
             else if(board[r][c] === 4096 && is4096Exist == false ){
-                alert("You are unstoppable at 4096!");
+                alert("Unstoppable, even Signalman can't  stop you!");
                 is4096Exist = true;
             }
             else if(board[r][c] === 8192 && is8192Exist == false ){
-                alert("Victory! You have reached 8192! You are incredibly awesome!");
+                alert("Victory! You got Zenkaiger! Get a life bro lmao!");
                 is8192Exist = true;
             }
         }
@@ -408,7 +408,7 @@ document.addEventListener('touchend', (e) => {
     if (hasLost()) {
         // Use setTimeout to delay the alert
         setTimeout(() => {
-        alert("Game Over! You have lost the game. Game will restart");
+        alert("Game Over! You suck at the game. Game will restart");
         restartGame();
         alert("Click any key to restart");
         // You may want to reset the game or perform other actions when the user loses.
